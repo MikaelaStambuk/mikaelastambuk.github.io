@@ -11,10 +11,14 @@ table {
 
   }
   th {
-    background-color: fuchsia;
-    color: blue;
+    background-color: lightblue;
+    color: fuchsia;
   }
 
 .info {
     font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
 }

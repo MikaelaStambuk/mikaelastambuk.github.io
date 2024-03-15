@@ -4,12 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Creation of my Personal Page</title>
+    <title>Lab Web 1</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 
 <body>
-    <h1 class="titulo">Creation of my Personal Page</h1>
+    <h1 class="titulo">Creation of my Personal Page</h1> <!-- va adentro del head????-->
     <h2 class="subtitulo">Things about me</h2>
 
     <p class="info">Hi, this is a personal page that contains information about me. </p>
@@ -63,6 +63,29 @@
         </tr>
 
     </table>
+
+        <tr>
+            <td>Insert your id:</td>
+            <td><input type="text" id="rutInput"></td>
+        </tr>
+        
+        <tr class="spacer-row">
+            <td colspan="2"></td>
+        </tr>
+        <tr>
+            <td colspan="2"> <button onclick="showRut()">Submit</button> </td>
+        </tr>
+        <tr>
+            <td colspan="2"><span id="displayRut"></span></td>
+        </tr>
+    
+    <script>
+        function showRut() {
+            var rut1 = document.getElementById("rutInput").value;
+            document.getElementById("displayRut").textContent = rut1;
+        }
+    </script>
+    
 
 </body>
 </html>
