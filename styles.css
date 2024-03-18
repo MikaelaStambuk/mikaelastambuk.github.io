@@ -1,17 +1,17 @@
-table {
+#table {
     width: 30%;
     border-collapse: collapse;
     background-color: aquamarine;
     margin: 20px
   }
-  th, td {
+ th, td {
     padding: 10px; 
     text-align: left;
     border: 1px solid black; 
     font-family: Arial, sans-serif;
 
   }
-  th {
+.container .table th {
     background-color: lightblue;
     color: fuchsia;
   }
@@ -22,4 +22,4 @@ table {
 
 h1 {
     text-align: center;
-}
+}                                             
