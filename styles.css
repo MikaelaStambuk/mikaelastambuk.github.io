@@ -22,4 +22,12 @@
 
 h1 {
     text-align: center;
-}                                             
+}                        
+
+.carousel {
+  max-width: 30%; 
+  margin-top: -320px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
