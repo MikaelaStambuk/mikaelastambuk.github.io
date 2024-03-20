@@ -75,51 +75,62 @@
         </div>
     </div>
 
-    <div class ="card"> <!-- contiene el boton de la imagen con mi repositorio -->
-        <img src="/Users/mikaela/Library/CloudStorage/OneDrive-Personal/Uandes/7 semestre/Web Technologies/lab/clonado/descarga.png" class="card-img-top" alt="">
-        <div class="card-body">
-          <h5 class="card-title">Mikaela`s Page</h5>
-          <p class="card-text">Hi, welcome to my page</p>
-          <a href="https://github.com/MikaelaStambuk/mikaelastambuk.github.io" class="btn btn-primary">Go to my repository</a>
+    <div class="container-fluid">
+        <div class="row">  <!-- Fila para el card y el carrusel -->
+
+          <div class="col-sm-12 col-md-4"> <!-- contiene el boton de la imagen con mi repositorio -->
+            <div class="card">
+              <img src="/Users/mikaela/Library/CloudStorage/OneDrive-Personal/Uandes/7 semestre/Web Technologies/lab/clonado/descarga.png" class="card-img-top img-fluid" alt="Imagen representativa">
+              <div class="card-body">
+                <h5 class="card-title">Mikaela's Page</h5>
+                <p class="card-text">Hi, welcome to my page</p>
+                <a href="https://github.com/MikaelaStambuk/mikaelastambuk.github.io" class="btn btn-primary">Go to my repository</a>
+              </div>
+            </div>
+          </div>
+
+        <div class="row"> <!-- contiene el boton con texto que se oculta-->
+            <div class="col-sm-12 col-md-4">
+              <div class="collapse" id="collapseExample">
+                <div class="card card-body">
+                  Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                </div>
+              </div>
+            </div>
+          </div>
+      
+          <div class="col-sm-12 col-md-6 col-lg-8 mb-3"> <!-- contiene el carrusel de fotos --> <!--si le saco tamaño col-md-6 
+                                                                                                se achica dms la fot  q hago???-->
+            <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="IMG_0144.jpeg" class="d-block w-100" alt="First Slide">
+                </div>
+                <div class="carousel-item">
+                  <img src="06443c80-0361-4ae5-9ba6-6c065df51f9a.jpg" class="d-block w-100" alt="Second Slide">
+                </div>
+                <div class="carousel-item">
+                  <img src="FullSizeRender.jpg" class="d-block w-100" alt="Third Slide">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+    
+        <div class="row"> <!--container para boton-->
+          <div class="col-12 text-center my-3">
+            <a href="https://getbootstrap.com/docs/5.3/components/buttons/" class="btn btn-primary" tabindex="-1" role="button" aria-disabled="true">Button</a>
+          </div>
         </div>
       </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-
-
-  </button>
-</p>
-<div class="collapse" id="collapseExample"> <!-- contiene el boton con texto que se oculta-->
-  <div class="card card-body">
-    Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
-  </div>
-</div>
-
-<div id="carousel" class="carousel slide"> <!-- contiene el carrusel de fotos -->
-    <div class="carousel-inner">
-        <div class="carousel-item active">
-            <img src="IMG_0144.jpeg" class="d-block w-100" alt="first Slide">
-        </div>
-        <div class="carousel-item">
-            <img src="06443c80-0361-4ae5-9ba6-6c065df51f9a.jpg" class="d-block w-100" alt="second Slide">
-        </div>
-        <div class="carousel-item">
-            <img src="FullSizeRender.jpg" class="d-block w-100" alt="third Slide">
-        </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-    </button>
-</div>
-
-<a href="https://getbootstrap.com/docs/5.3/components/buttons/" 
-class="btn btn-primary" tabindex="-1" role="button" aria-disabled="true">Button</a> <!-- boton -->
-
 
 </body>
 </html>
